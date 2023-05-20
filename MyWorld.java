@@ -25,10 +25,8 @@ public class MyWorld extends World
         addObject(polarbear, 300, 300);
         
         // creating a label
-        
-        Label scoreLabel = new Label(0, 80);
+        scoreLabel = new Label(0, 80);
         addObject(scoreLabel, 50, 50);
-        
         
         createPizza();
     }
@@ -47,5 +45,4 @@ public class MyWorld extends World
         int y = 0;
         addObject(pizza, x, y);
     }
-    
 }
