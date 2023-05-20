@@ -16,10 +16,10 @@ public class PolarBear extends Actor
     {
         // polar bear able to move left and right with the arrow keys 
         if(Greenfoot.isKeyDown("left")) {
-            move(-1);
+            move(-2);
         }
         else if (Greenfoot.isKeyDown("right")) {
-            move(1);
+            move(2);
         }
         
         // removes the pizza after the polar bear touchs/eats it
