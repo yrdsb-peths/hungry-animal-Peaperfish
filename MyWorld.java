@@ -18,12 +18,22 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         
+        // creating polarbear
         PolarBear polarbear = new PolarBear();
         addObject(polarbear, 300, 300);
+        
+        // creating a label
+        
+        Label scoreLabel1 = new Label(0, 80);
+        addObject(scoreLabel1, 50, 50);
+        
         
         createPizza();
     }
     
+    /**
+     * create a new pizza at a random place on the at of the screen
+     */
     public void createPizza() {
         Pizza pizza = new Pizza();
         int x = Greenfoot.getRandomNumber(600);
