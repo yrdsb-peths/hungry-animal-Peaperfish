@@ -21,7 +21,14 @@ public class MyWorld extends World
         PolarBear polarbear = new PolarBear();
         addObject(polarbear, 300, 300);
         
-        Pizza pizza = new Pizza();
-        addObject(pizza, 300, 0);
+        createPizza();
     }
+    
+    public void createPizza() {
+        Pizza pizza = new Pizza();
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(pizza, x, y);
+    }
+    
 }
