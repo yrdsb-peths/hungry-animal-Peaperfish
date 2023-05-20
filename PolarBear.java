@@ -14,11 +14,15 @@ public class PolarBear extends Actor
      */
     public void act()
     {
+        // polar bear able to move left and right with the arrow keys 
         if(Greenfoot.isKeyDown("left")) {
             move(-1);
         }
         else if (Greenfoot.isKeyDown("right")) {
             move(1);
         }
+        
+        // removes the pizza after the polar bear touchs/eats it
+        removeTouching(Pizza.class);
     }
 }
