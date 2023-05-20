@@ -31,6 +31,7 @@ public class PolarBear extends Actor
             removeTouching(Pizza.class);
             MyWorld world = (MyWorld) getWorld();
             world.createPizza();
+            world.increaseScore();
         }
     }
 }
