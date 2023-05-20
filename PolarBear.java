@@ -3,14 +3,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class PolarBear here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Brian Wang 
+ * @version May 2023
  */
-public class PolarBear extends Counter
+public class PolarBear extends Actor
 {
+    /**
+     * Act - do whatever the PolarBear wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public void act()
     {
-        PolarBear polarbear = new PolarBear();
-        setObject = 
+        move(1);
     }
 }
