@@ -23,8 +23,14 @@ public class PolarBear extends Actor
         }
         
         // removes the pizza after the polar bear touchs/eats it
-        removeTouching(Pizza.class);
+        eat();
     }
     
-
+    public void eat() {
+        if(isTouching(Pizza.class)) {
+            removeTouching(Pizza.class);
+            MyWorld world = (MyWorld) getWorld();
+            world.createPizza();
+        }
+    }
 }
