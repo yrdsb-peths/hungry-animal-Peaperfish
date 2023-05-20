@@ -14,6 +14,14 @@ public class Pizza extends Actor
      */
     public void act()
     {
+        // pizza falls down at 1 unit per second
         setLocation(getX(), getY() + 1);
+        
+        // remove pizza and write game over when pizza touches the buttom
+        MyWorld world = (MyWorld) getWorld();
+        if(getY() >= world.getHeight()) {
+            world.gameOver();
+            world.removeObject(this);
+        }
     }
 }

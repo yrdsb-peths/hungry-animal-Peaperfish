@@ -18,7 +18,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(600, 400, 1, false); 
         
         // creating polarbear
         PolarBear polarbear = new PolarBear();
@@ -31,6 +31,17 @@ public class MyWorld extends World
         createPizza();
     }
     
+    /**
+     * end the game and write "gameover"
+     */
+    public void gameOver() {
+        Label gameOverLabel = new Label("Game over", 100);
+        addObject(gameOverLabel, 300, 200);
+    }
+    
+    /**
+     * inscrease score
+     */
     public void increaseScore() {
         score++;
         scoreLabel.setValue(score);
