@@ -13,7 +13,10 @@ public class PolarBear extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
+    // sound of polar bear when eating pizza
     GreenfootSound polarBearSound = new GreenfootSound("bear_sound.wav");
+    
+    // facing right or left polar bear still moves
     GreenfootImage[] idleLeft = new GreenfootImage[8];
     GreenfootImage[] idleRight = new GreenfootImage[8];
 
