@@ -16,7 +16,7 @@ public class TitleScreen extends World
      */
     public TitleScreen()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 700 x 500 cells with a cell size of 1x1 pixels.
         super(700, 500, 1); 
         
         // bg image

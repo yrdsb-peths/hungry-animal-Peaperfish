@@ -16,13 +16,13 @@ public class MyWorld extends World
      */
     public MyWorld()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 700 x 500 cells with a cell size of 1x1 pixels.
         super(700, 500, 1, false); 
         GreenfootImage bg = new GreenfootImage("background.jpg");
         bg.scale(getWidth(), getHeight());
         setBackground(bg);
         
-        // creating polarbear
+        // creating polar bear
         PolarBear polarbear = new PolarBear();
         addObject(polarbear, 300, 450);
         
