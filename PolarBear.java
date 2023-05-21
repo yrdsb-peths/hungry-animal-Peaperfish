@@ -17,12 +17,17 @@ public class PolarBear extends Actor
     GreenfootImage[] idle = new GreenfootImage[8];
     
     // facing direction when started
-    String facing = "right";
+    SimpleTimer animationTimer = new SimpleTimer();
     
     public PolarBear() {
         for(int i = 0; i < idle.length; i++) {
             idle[i] = new GreenfootImage("images/polarBear_Idle_sprite/idle_" + i + ".png");
         }
+        setImage(idle[0]);
+        
+        animationTimer.mark();
+        
+        // initial polar bear image
         setImage(idle[0]);
     }
     
@@ -32,6 +37,11 @@ public class PolarBear extends Actor
     int imageIndex = 0;
     
     public void animatePolarBear() {
+        if(animationTimer.millisElapsed() < 90) {
+            return;
+        }
+        animationTimer.mark();
+        
         setImage(idle[imageIndex]);
         imageIndex = (imageIndex + 1) % idle.length;
     }
