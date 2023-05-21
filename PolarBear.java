@@ -14,21 +14,34 @@ public class PolarBear extends Actor
      */
     
     GreenfootSound polarBearSound = new GreenfootSound("bear_sound.wav");
-    GreenfootImage[] idle = new GreenfootImage[8];
+    GreenfootImage[] idleLeft = new GreenfootImage[8];
+    GreenfootImage[] idleRight = new GreenfootImage[8];
+    
+    
+    // direction the polar bear is facing
+    String facing = "right";
+    
     
     // facing direction when started
     SimpleTimer animationTimer = new SimpleTimer();
     
+    /**
+     * constructor
+     */
     public PolarBear() {
-        for(int i = 0; i < idle.length; i++) {
-            idle[i] = new GreenfootImage("images/polarBear_Idle_sprite/idle_" + i + ".png");
+        for(int i = 0; i < idleLeft.length; i++) {
+            idleLeft[i] = new GreenfootImage("images/polarBear_Idle_sprite/idle_" + i + ".png");
         }
-        setImage(idle[0]);
+        
+        for(int i = 0; i < idleRight.length; i++) {
+            idleRight[i] = new GreenfootImage("images/polarBear_Idle_sprite/idle_" + i + ".png");
+            idleLeft[i].mirrorHorizontally();
+        }
         
         animationTimer.mark();
         
         // initial polar bear image
-        setImage(idle[0]);
+        setImage(idleLeft[0]);
     }
     
     /**
@@ -42,8 +55,14 @@ public class PolarBear extends Actor
         }
         animationTimer.mark();
         
-        setImage(idle[imageIndex]);
-        imageIndex = (imageIndex + 1) % idle.length;
+        if(facing.equals("right")) {
+            setImage(idleLeft[imageIndex]);
+            imageIndex = (imageIndex + 1) % idleLeft.length;
+        }
+        else {
+            setImage(idleRight[imageIndex]);
+            imageIndex = (imageIndex + 1) % idleRight.length;
+        }    
     }
     
     public void act()
@@ -51,9 +70,11 @@ public class PolarBear extends Actor
         // polar bear able to move left and right with the arrow keys 
         if(Greenfoot.isKeyDown("left")) {
             move(-2);
+            facing = "left";
         }
         else if (Greenfoot.isKeyDown("right")) {
             move(2);
+            facing = "right";
         }
         
         // removes the pizza after the polar bear touchs/eats it
