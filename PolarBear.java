@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class PolarBear here.
+ * the polar bear loves pizza more then anything
  * 
  * @author Brian Wang 
  * @version May 2023
@@ -65,6 +65,9 @@ public class PolarBear extends Actor
         }    
     }
     
+    /**
+     * acters/moves the polar bear with left and right key
+     */
     public void act()
     {
         // polar bear able to move left and right with the arrow keys 
@@ -84,6 +87,9 @@ public class PolarBear extends Actor
         animatePolarBear();
     }
     
+    /**
+     * what happenes when the polar bear eats the pizza
+     */
     public void eat() {
         if(isTouching(Pizza.class)) {
             removeTouching(Pizza.class);

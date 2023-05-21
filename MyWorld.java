@@ -1,17 +1,18 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * A world where the polar bear is moved by the player
+ * A world where the polar bear loves pizza more then anything
  * 
  * @author Brian Wang
  * @version May 2023
  */
 public class MyWorld extends World
 {
+    // initial values 
     public int score = 0;
     Label scoreLabel;
     int level = 1;
-    
+
     /**
      * Constructor for objects of class MyWorld
      */
