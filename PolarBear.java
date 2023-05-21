@@ -16,7 +16,7 @@ public class PolarBear extends Actor
     GreenfootSound polarBearSound = new GreenfootSound("bear_sound.wav");
     GreenfootImage[] idleLeft = new GreenfootImage[8];
     GreenfootImage[] idleRight = new GreenfootImage[8];
-    
+
     
     // direction the polar bear is facing
     String facing = "right";
