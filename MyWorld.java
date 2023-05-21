@@ -18,14 +18,14 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(700, 400, 1, false); 
+        super(700, 500, 1, false); 
         GreenfootImage bg = new GreenfootImage("background.jpg");
         bg.scale(getWidth(), getHeight());
         setBackground(bg);
         
         // creating polarbear
         PolarBear polarbear = new PolarBear();
-        addObject(polarbear, 300, 300);
+        addObject(polarbear, 300, 450);
         
         // creating a label
         scoreLabel = new Label(0, 80);

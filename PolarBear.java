@@ -14,6 +14,25 @@ public class PolarBear extends Actor
      */
     
     GreenfootSound polarBearSound = new GreenfootSound("bear_sound.wav");
+    GreenfootImage[] idle = new GreenfootImage[8];
+    
+    public PolarBear() {
+        for(int i = 0; i < idle.length; i++) {
+            idle[i] = new GreenfootImage("images/polarBear_Idle_sprite/idle_" + i + ".png");
+        }
+        setImage(idle[0]);
+    }
+    
+    /**
+     * animate the polar bear
+     */
+    int imageIndex = 0;
+    
+    public void animatePolarBear() {
+        setImage(idle[imageIndex]);
+        imageIndex = (imageIndex + 1) % idle.length;
+    }
+    
     public void act()
     {
         // polar bear able to move left and right with the arrow keys 
@@ -26,6 +45,9 @@ public class PolarBear extends Actor
         
         // removes the pizza after the polar bear touchs/eats it
         eat();
+        
+        // animate the polar bear
+        animatePolarBear();
     }
     
     public void eat() {
