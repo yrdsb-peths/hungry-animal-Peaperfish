@@ -24,7 +24,7 @@ This is a simple game where the player controls a polar bear to eat pizzas and s
 
 ## License
 
-This game is released under the [MIT License](LICENSE). You are free to use, modify, and distribute the game for personal or commercial purposes.
+This game is released under the [MIT License](https://github.com/yrdsb-peths/hungry-animal-Peaperfish/blob/main/MIT%20License.md). You are free to use, modify, and distribute the game for personal or commercial purposes.
 
 ## Credits
 
