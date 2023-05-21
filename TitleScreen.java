@@ -53,6 +53,15 @@ public class TitleScreen extends World
         addObject(pizza,635,77);
         PolarBear polarBear = new PolarBear();
         addObject(polarBear,637,223);
+        Label label = new Label("Press 'SPACE' To Start Game", 40);
+        addObject(label,275,279);
+        label.setLocation(371,353);
+        label.setLocation(361,285);
+        Label label2 = new Label("Use ⬅️ And ➡️ To Move", 40);
+        addObject(label2,295,395);
+        label2.setLocation(349,363);
+        label.setLocation(365,313);
+        label2.setLocation(373,367);
     }
 }
 
