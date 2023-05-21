@@ -25,7 +25,7 @@ public class TitleScreen extends World
         setBackground(bg);
         
         // title size
-        addObject(titleLable, getWidth()/2, getHeight()/2);
+        addObject(titleLable, 320, 165);
         prepare();
     }
 
@@ -48,10 +48,11 @@ public class TitleScreen extends World
      */
     private void prepare()
     {
-        PolarBear polarBear = new PolarBear();
-        addObject(polarBear,511,139);
+
         Pizza pizza = new Pizza();
-        addObject(pizza,185,139);
+        addObject(pizza,635,77);
+        PolarBear polarBear = new PolarBear();
+        addObject(polarBear,637,223);
     }
 }
 
