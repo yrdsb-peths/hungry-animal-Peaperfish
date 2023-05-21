@@ -16,6 +16,9 @@ public class PolarBear extends Actor
     GreenfootSound polarBearSound = new GreenfootSound("bear_sound.wav");
     GreenfootImage[] idle = new GreenfootImage[8];
     
+    // facing direction when started
+    String facing = "right";
+    
     public PolarBear() {
         for(int i = 0; i < idle.length; i++) {
             idle[i] = new GreenfootImage("images/polarBear_Idle_sprite/idle_" + i + ".png");
