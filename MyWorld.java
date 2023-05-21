@@ -12,8 +12,7 @@ public class MyWorld extends World
     Label scoreLabel;
     
     /**
-     * Constructor for objects of class MyWorld.
-     * 
+     * Constructor for objects of class MyWorld
      */
     public MyWorld()
     {    
