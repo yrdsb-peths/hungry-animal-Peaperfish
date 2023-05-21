@@ -12,6 +12,8 @@ public class PolarBear extends Actor
      * Act - do whatever the PolarBear wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
+    GreenfootSound polarBearSound = new GreenfootSound("bear_sound.wav");
     public void act()
     {
         // polar bear able to move left and right with the arrow keys 
@@ -32,6 +34,7 @@ public class PolarBear extends Actor
             MyWorld world = (MyWorld) getWorld();
             world.createPizza();
             world.increaseScore();
+            polarBearSound.play();
         }
     }
 }
