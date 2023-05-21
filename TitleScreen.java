@@ -62,6 +62,7 @@ public class TitleScreen extends World
         label2.setLocation(349,363);
         label.setLocation(365,313);
         label2.setLocation(373,367);
+        removeObject(pizza);
     }
 }
 
