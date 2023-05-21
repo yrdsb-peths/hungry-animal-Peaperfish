@@ -19,6 +19,7 @@ public class Pizza extends Actor
         
         // remove pizza and write game over when pizza touches the buttom
         MyWorld world = (MyWorld) getWorld();
+        //TitleScreen titleScreen = (TitleScreen) getWorld();
         if(getY() >= world.getHeight()) {
             world.gameOver();
             world.removeObject(this);
