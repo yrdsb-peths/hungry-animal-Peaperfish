@@ -1,4 +1,4 @@
-# Polar Bear Game
+# Polar Bear Game 🐻‍❄️
 
 This is a simple game where the player controls a polar bear to eat pizzas and score points. The goal is to eat as many pizzas as possible.
 
@@ -9,7 +9,7 @@ This is a simple game where the player controls a polar bear to eat pizzas and s
 - Each time the polar bear touches a pizza, it gains points and the pizza disappears.
 - The player's score is displayed on the screen.
 - Pizzas will continuously fall from the top of the screen at random positions.
-- The game ends after a certain amount of time, and the final score is shown.
+- The game ends after missing an pizza, and the final score will be shown.
 
 
 ## Controls
@@ -29,6 +29,10 @@ This game is released under the [MIT License](https://github.com/yrdsb-peths/hun
 ## Credits
 
 - Game developed by [[Brian Wang]](https://github.com/Peaperfish)
+- Mr. Chan Greenfoot Video Tutorials: 
+  - Part 1: https://youtu.be/zxaa3X0MihI
+  - Part 2: https://youtu.be/TwID9i0Ey6o
+  - Part 3: https://youtu.be/GT-eFwa4Abc
 - Art assets from [[spriters-resource.com]](https://www.spriters-resource.com/fullview/14905/)
 - Sound effects from [[findsounds.com]](https://www.findsounds.com/ISAPI/search.dll?keywords=polar+bear)
 
