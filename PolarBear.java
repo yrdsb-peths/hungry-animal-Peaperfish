@@ -75,11 +75,11 @@ public class PolarBear extends Actor
     {
         // polar bear able to move left and right with the arrow keys 
         if(Greenfoot.isKeyDown("left")) {
-            move(-2);
+            move(-5);
             facing = "left";
         }
         else if (Greenfoot.isKeyDown("right")) {
-            move(2);
+            move(5);
             facing = "right";
         }
         
